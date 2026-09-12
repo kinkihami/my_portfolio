@@ -16,14 +16,14 @@ export const PROFILE_DATA = {
   tagline:
     "Production cross-platform mobile engineering with clean architecture, multi-tenant isolation, and verified reliability under real device constraints.",
   bio: "Flutter Developer and Product Engineer at Edmento Technologies in Kerala, India. I architect and ship multi-tenant mobile applications with clean architecture, robust security isolation, and role-based access control. Focused on building production systems that scale reliably while balancing security, infrastructure cost, and mobile performance.",
-  
+
   // TODO Constants - Fill these in when URLs/Assets are available
   TODO_PHOTO: "", // Leave empty to use telemetry fallback avatar, or place image at public/hameesh.jpg
   TODO_RESUME_PDF: "/Mohamed-Hameesh-C-Resume.pdf",
   TODO_GITHUB_URL: "", // e.g. "https://github.com/username" (rendered only when populated)
   TODO_LINKEDIN_URL: "", // e.g. "https://linkedin.com/in/username" (rendered only when populated)
   TODO_FORM_ENDPOINT: "", // e.g. "https://formspree.io/f/xxxx" or Resend API endpoint (if empty, falls back to direct mailto)
-  
+
   metrics: [
     {
       id: "exp",
@@ -51,9 +51,9 @@ export const PROFILE_DATA = {
     },
     {
       id: "stores",
-      value: "4",
-      numericValue: 4,
-      suffix: "",
+      value: "18+",
+      numericValue: 18,
+      suffix: "+",
       label: "Store releases",
       sublabel: "Live on Google Play and Apple App Store",
     },

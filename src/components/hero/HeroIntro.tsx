@@ -3,7 +3,7 @@
 import React from "react";
 import { PROFILE_DATA } from "@/content/profile";
 import { Button } from "@/components/ui/button";
-import { FileDown, ArrowDown, Mail, Layers, Sparkles, Smartphone, Code2, ShieldCheck, Zap } from "lucide-react";
+import { FileDown, ArrowDown, Mail, Layers } from "lucide-react";
 import { useSmoothScroll } from "@/components/providers/SmoothScrollProvider";
 import { motion } from "framer-motion";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
@@ -42,37 +42,6 @@ export function HeroIntro() {
       transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const },
     },
   };
-
-  const KPI_ITEMS = [
-    {
-      value: "2+",
-      label: "Years Experience",
-      detail: "Cross-platform mobile apps in production",
-      color: "from-cyan-400 to-sky-500",
-      icon: Smartphone,
-    },
-    {
-      value: "7+",
-      label: "White-Label Apps",
-      detail: "Multi-tenant platforms deployed",
-      color: "from-sky-400 to-indigo-500",
-      icon: Layers,
-    },
-    {
-      value: "10+",
-      label: "Role Dashboards",
-      detail: "Isolated security & permission models",
-      color: "from-indigo-400 to-purple-500",
-      icon: ShieldCheck,
-    },
-    {
-      value: "18+",
-      label: "Live Store Apps",
-      detail: "Google Play & Apple App Store",
-      color: "from-emerald-400 to-teal-500",
-      icon: Zap,
-    },
-  ];
 
   return (
     <motion.div
@@ -181,38 +150,6 @@ export function HeroIntro() {
           <Mail className="h-4 w-4 text-indigo-400" />
           Get in Touch
         </Button>
-      </motion.div>
-
-      {/* 4-Metric Bento Stat Pods */}
-      <motion.div
-        variants={itemVariants}
-        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-8"
-      >
-        {KPI_ITEMS.map((kpi, idx) => {
-          const Icon = kpi.icon;
-          return (
-            <div
-              key={idx}
-              className="glass-panel glass-panel-hover p-5 rounded-2xl text-left flex flex-col justify-between relative overflow-hidden group"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-mono text-slate-400">{kpi.label}</span>
-                <div className="h-8 w-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
-                  <Icon className="h-4 w-4" />
-                </div>
-              </div>
-
-              <div>
-                <span className={`text-3xl sm:text-4xl font-extrabold font-mono bg-gradient-to-r ${kpi.color} bg-clip-text text-transparent`}>
-                  {kpi.value}
-                </span>
-                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                  {kpi.detail}
-                </p>
-              </div>
-            </div>
-          );
-        })}
       </motion.div>
 
       {/* Subtle Scroll Down */}
