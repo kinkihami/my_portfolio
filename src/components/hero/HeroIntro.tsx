@@ -66,7 +66,7 @@ export function HeroIntro() {
       icon: ShieldCheck,
     },
     {
-      value: "4",
+      value: "18+",
       label: "Live Store Apps",
       detail: "Google Play & Apple App Store",
       color: "from-emerald-400 to-teal-500",
@@ -99,9 +99,8 @@ export function HeroIntro() {
             <motion.span
               key={index}
               variants={wordVariants}
-              className={`inline-block mr-3 sm:mr-5 last:mr-0 ${
-                index === 1 ? "text-gradient-cyan-indigo drop-shadow-sm" : "text-white"
-              }`}
+              className={`inline-block mr-3 sm:mr-5 last:mr-0 ${index === 1 ? "text-gradient-cyan-indigo drop-shadow-sm" : "text-white"
+                }`}
             >
               {word}
             </motion.span>
